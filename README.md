@@ -5,46 +5,163 @@
 ### [2. 설치 방법](#2-설치-방법)  
 ### [3. 사용 방법](#3-사용-방법)  
 ### [4. 사용 기술](#4-사용-기술)
-### [5. 주요 기능](#5-주요-기능)  
-### [6. 문제 해결](#6-문제-해결)
+### [5. 목표 기능](#5-목표-기능)  
+### [6. 진행 과정](#6-진행-과정)
 ### [7. 폴더 구조](#7-폴더-구조)
 
 ---
 
 ## 1. 프로젝트 소개 및 목적
-- 프로젝트 제목
+- 프로젝트 제목: NOKY
+  - OKKY 사이트의 클론 코딩입니다.
+  
 - 프로젝트 목적
+  - Vue로 프론트엔드, Spring Boot로 백엔드 기능을 완성하여 풀스택 구현.
+  - AWS로 배포 학습.
+  - Docker를 통한 CI/CD 학습.
 
 ---
 
 ## 2. 설치 방법
-- npm 혹은 yarn 설치
+- front 폴더에서 명령어 입력
+
+```
+npm i
+```
+
+- backend 폴더에서 명령어 입력
+```
+mvn clean install
+```
 
 ---
 
 ## 3. 사용 방법
-- package.json 명령어
+- BackendApplication.java의 main 메서드 실행
+
+```
+package com.noky.backend;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BackendApplication {
+
+         // 아래 메서드 실행
+	public static void main(String[] args) {
+		SpringApplication.run(BackendApplication.class, args);
+	}
+
+}
+```
 
 ---
 
 ## 4. 사용 기술
-- 프레임 워크
-- (라이브러리)
-- 뱃지 사용
+- 프론트엔드:  
+![vue3](https://github.com/ka0824/noky_vue_spring/assets/79782594/f6091e62-4bf3-4b0a-af0e-898cbce6d6cd)
+
+- 백엔드:  
+![springboot](https://github.com/ka0824/noky_vue_spring/assets/79782594/c5f5f777-ab60-42a7-856e-03acc3c4d877)
+
+- DevOps:  
+![aws](https://github.com/ka0824/noky_vue_spring/assets/79782594/8e272f34-f907-44b2-b674-d07046dd1c81)
+![docker](https://github.com/ka0824/noky_vue_spring/assets/79782594/7b957e9e-22b2-47c3-9772-dd3f77963810)
 
 ---
 
-## 5. 주요 기능
-- 기능 나열
-- (핵심 기능은 gif)
+## 5. 목표 기능
+
+<details>
+<summary>프론트엔드</summary>
+<div markdown="1">
+
+안녕
+
+</div>
+</details>
+
+<details>
+<summary>백엔드</summary>
+<div markdown="1">
+
+안녕
+
+</div>
+</details>
+
+<details>
+<summary>배포</summary>
+<div markdown="1">
+
+안녕
+
+</div>
+</details>
 
 ---
 
-## 6. 문제 해결
-- issue 항목에 작성하고, 해당 항목에서 확인할 수 있게끔 하기
+## 6. 진행 과정
 
 ---
 
 ## 7. 폴더 구조
-- 코드 구성 알 수 있게끔
-- 상하 구조 확실히 표시
+- 프론트엔드
+
+```
+/front/src
+
+📦src
+ ┣ 📂assets
+ ┃ ┗ 📜vue.svg
+ ┣ 📂components
+ ┃ ┣ 📜Darkmode.vue
+ ┃ ┗ 📜Nav.vue
+ ┣ 📂router
+ ┃ ┗ 📜router.ts
+ ┣ 📂template
+ ┃ ┗ 📜Template.vue
+ ┣ 📂views
+ ┃ ┣ 📜Community.vue
+ ┃ ┣ 📜Home.vue
+ ┃ ┣ 📜Qna.vue
+ ┃ ┣ 📜Read.vue
+ ┃ ┗ 📜Write.vue
+ ┣ 📜App.vue
+ ┣ 📜main.ts
+ ┣ 📜reset.css
+ ┗ 📜vite-env.d.ts
+
+```
+
+- 백엔드
+```
+./backend/src
+
+📦src
+ ┣ 📂main
+ ┃ ┣ 📂java
+ ┃ ┃ ┗ 📂com
+ ┃ ┃ ┃ ┗ 📂noky
+ ┃ ┃ ┃ ┃ ┗ 📂backend
+ ┃ ┃ ┃ ┃ ┃ ┣ 📂controller
+ ┃ ┃ ┃ ┃ ┃ ┃ ┗ 📜TestController.java
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜BackendApplication.java
+ ┃ ┗ 📂resources
+ ┃ ┃ ┣ 📂static
+ ┃ ┃ ┃ ┣ 📂assets
+ ┃ ┃ ┃ ┃ ┣ 📜index-127f2da4.js
+ ┃ ┃ ┃ ┃ ┣ 📜index-c322ae43.css
+ ┃ ┃ ┃ ┃ ┗ 📜vue-5532db34.svg
+ ┃ ┃ ┃ ┣ 📜index.html
+ ┃ ┃ ┃ ┗ 📜vite.svg
+ ┃ ┃ ┣ 📂templates
+ ┃ ┃ ┗ 📜application.properties
+ ┗ 📂test
+ ┃ ┗ 📂java
+ ┃ ┃ ┗ 📂com
+ ┃ ┃ ┃ ┗ 📂noky
+ ┃ ┃ ┃ ┃ ┗ 📂backend
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜BackendApplicationTests.java
+```
