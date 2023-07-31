@@ -1,5 +1,7 @@
 <script setup lang="ts"></script>
 
-<template><router-view></router-view></template>
+<template>
+  <div>Qna</div>
+</template>
 
 <style scoped></style>

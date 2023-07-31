@@ -1,5 +1,7 @@
 <script setup lang="ts"></script>
 
-<template><router-view></router-view></template>
+<template>
+  <div>커뮤니티</div>
+</template>
 
 <style scoped></style>
