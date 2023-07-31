@@ -1,5 +1,21 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, onMounted } from "vue";
+import axios from "axios";
+
+const message = ref("");
+
+const springBootUrl = "/api";
+
+async function fetchMessage() {
+  try {
+    const response = await axios.get(`${springBootUrl}/test`);
+    message.value = response.data;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+onMounted(fetchMessage);
 </script>
 
 <template>
@@ -10,21 +26,8 @@ import HelloWorld from './components/HelloWorld.vue'
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <p>{{ message }}</p>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
