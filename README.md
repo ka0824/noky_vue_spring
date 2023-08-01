@@ -76,8 +76,14 @@ public class BackendApplication {
 <details>
 <summary>프론트엔드</summary>
 <div markdown="1">
-
-안녕
+	
+- [ ] 페이지 라우팅  	
+- [ ] 반응형 
+- [ ] 태그에 따라 게시글 분류
+- [ ] 페이지네이션
+- [ ] 좋아요 기능
+- [ ] 다크모드
+- [ ] 검색 기능
 
 </div>
 </details>
@@ -85,8 +91,13 @@ public class BackendApplication {
 <details>
 <summary>백엔드</summary>
 <div markdown="1">
+	
+- [ ] 토큰을 이용한 로그인
+- [ ] mysql을 통한 게시판글 CRUD
+- [ ] 페이지네이션
+- [ ] 좋아요 기능
+- [ ] 검색 기능
 
-안녕
 
 </div>
 </details>
@@ -95,7 +106,8 @@ public class BackendApplication {
 <summary>배포</summary>
 <div markdown="1">
 
-안녕
+- [ ] aws 통한 배포
+- [ ] Docker를 통한 통합/배포
 
 </div>
 </details>
