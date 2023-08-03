@@ -1,33 +1,25 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
-import axios from "axios";
+import { useStore } from "vuex";
+import { computed } from "vue";
 
-const message = ref("");
+import Nav from "./components/Nav.vue";
 
-const springBootUrl = "/api";
-
-async function fetchMessage() {
-  try {
-    const response = await axios.get(`${springBootUrl}/test`);
-    message.value = response.data;
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-onMounted(fetchMessage);
+const store = useStore();
+const isDarkmode = computed(() => store.state.isDarkmode);
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-    <p>{{ message }}</p>
+  <div class="main-container" :class="{ 'dark-body': isDarkmode }">
+    <Nav></Nav>
+    <router-view></router-view>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
