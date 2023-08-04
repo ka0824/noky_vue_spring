@@ -116,6 +116,10 @@ public class BackendApplication {
 
 ## 6. 진행 과정
 
+### [1. 프론트엔드, 백엔드 연결하기](https://github.com/ka0824/noky_vue_spring/blob/main/workflow/1_connect_front_back.md)
+
+### [2. 다크모드 적용하기](https://github.com/ka0824/noky_vue_spring/blob/main/workflow/2_make_darkmode.md)
+
 ---
 
 ## 7. 폴더 구조
