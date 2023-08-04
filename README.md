@@ -146,6 +146,8 @@ public class BackendApplication {
 
 ### [3. 페이지 라우터 만들기](https://github.com/ka0824/noky_vue_spring/blob/main/workflow/3_make_page_router.md)
 
+### [4. Font Awesome 아이콘 사용하기](https://github.com/ka0824/noky_vue_spring/blob/main/workflow/4_use_fontawesome_icon.md)
+
 <br />
 
 ---
