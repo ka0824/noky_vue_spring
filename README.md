@@ -148,6 +148,8 @@ public class BackendApplication {
 
 ### [4. Font Awesome 아이콘 사용하기](https://github.com/ka0824/noky_vue_spring/blob/main/workflow/4_use_fontawesome_icon.md)
 
+### [5. AWS EC2 인스턴스 만들기](https://github.com/ka0824/noky_vue_spring/blob/main/workflow/5_make_aws_ec2.md)
+
 <br />
 
 ---
