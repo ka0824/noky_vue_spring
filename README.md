@@ -24,6 +24,9 @@
   - AWS로 배포 학습.
   - Docker를 통한 CI/CD 학습.
 
+- 프로젝트 접속하기
+  - ### [noky 바로가기](http://ec2-13-211-168-207.ap-southeast-2.compute.amazonaws.com:8080)
+
 <br />
 
 ---
