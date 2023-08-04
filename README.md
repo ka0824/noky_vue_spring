@@ -144,6 +144,8 @@ public class BackendApplication {
 
 ### [2. 다크모드 적용하기](https://github.com/ka0824/noky_vue_spring/blob/main/workflow/2_make_darkmode.md)
 
+### [3. 페이지 라우터 만들기](https://github.com/ka0824/noky_vue_spring/blob/main/workflow/3_make_page_router.md)
+
 <br />
 
 ---
