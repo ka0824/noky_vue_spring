@@ -9,7 +9,11 @@
 ### [6. 진행 과정](#6-진행-과정-1)
 ### [7. 폴더 구조](#7-폴더-구조-1)
 
+<br />
+
 ---
+
+<br />
 
 ## 1. 프로젝트 소개 및 목적
 - 프로젝트 제목: NOKY
@@ -20,7 +24,11 @@
   - AWS로 배포 학습.
   - Docker를 통한 CI/CD 학습.
 
+<br />
+
 ---
+
+<br />
 
 ## 2. 설치 방법
 - front 폴더에서 명령어 입력
@@ -34,7 +42,11 @@ npm i
 mvn clean install
 ```
 
+<br />
+
 ---
+
+<br />
 
 ## 3. 사용 방법
 - BackendApplication.java의 main 메서드 실행
@@ -56,7 +68,11 @@ public class BackendApplication {
 }
 ```
 
+<br />
+
 ---
+
+<br />
 
 ## 4. 사용 기술
 - 프론트엔드:  
@@ -69,7 +85,11 @@ public class BackendApplication {
 ![aws](https://github.com/ka0824/noky_vue_spring/assets/79782594/8e272f34-f907-44b2-b674-d07046dd1c81)
 ![docker](https://github.com/ka0824/noky_vue_spring/assets/79782594/7b957e9e-22b2-47c3-9772-dd3f77963810)
 
+<br />
+
 ---
+
+<br />
 
 ## 5. 목표 기능
 
@@ -112,7 +132,11 @@ public class BackendApplication {
 </div>
 </details>
 
+<br />
+
 ---
+
+<br />
 
 ## 6. 진행 과정
 
@@ -120,7 +144,11 @@ public class BackendApplication {
 
 ### [2. 다크모드 적용하기](https://github.com/ka0824/noky_vue_spring/blob/main/workflow/2_make_darkmode.md)
 
+<br />
+
 ---
+
+<br />
 
 ## 7. 폴더 구조
 - 프론트엔드
