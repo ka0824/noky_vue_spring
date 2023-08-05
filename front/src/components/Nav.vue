@@ -50,12 +50,14 @@ import Darkmode from "./Darkmode.vue";
         <Darkmode></Darkmode>
       </div>
     </div>
-    <button
-      class="user-btn signin responsive"
-      :class="{ 'dark-signin': isDarkmode }"
-    >
-      로그인
-    </button>
+    <router-link to="/login">
+      <button
+        class="user-btn signin responsive"
+        :class="{ 'dark-signin': isDarkmode }"
+      >
+        로그인
+      </button>
+    </router-link>
     <button class="user-btn signup responsive">회원가입</button>
     <button
       class="responsive-btn"

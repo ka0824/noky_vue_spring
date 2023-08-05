@@ -2,15 +2,12 @@
 import { useStore } from "vuex";
 import { computed } from "vue";
 
-import Nav from "./components/Nav.vue";
-
 const store = useStore();
 const isDarkmode = computed(() => store.state.isDarkmode);
 </script>
 
 <template>
   <div class="main-container" :class="{ 'dark-body': isDarkmode }">
-    <Nav></Nav>
     <router-view></router-view>
   </div>
 </template>

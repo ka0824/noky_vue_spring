@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Nav from "../components/Nav.vue";
+</script>
 
 <template>
-  <div>템플릿</div>
+  <Nav></Nav>
 </template>
 
 <style scoped></style>
