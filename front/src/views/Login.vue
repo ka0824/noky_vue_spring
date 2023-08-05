@@ -158,6 +158,7 @@ const isDarkmode = computed(() => store.state.isDarkmode);
 .dark-input {
   background: rgb(46, 56, 70);
   border: 1px solid rgb(64, 73, 88);
+  color: white;
 
   &:focus {
     border: 1px solid rgb(107, 114, 128);
